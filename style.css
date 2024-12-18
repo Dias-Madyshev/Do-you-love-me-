@@ -1,0 +1,64 @@
+body {
+  background-image: url("./heart.png");
+  background-size: 25%;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Box {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: 30px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  gap: 40px;
+}
+button {
+  width: 70px;
+  height: 40px;
+  background-color: blue;
+  color: aliceblue;
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+}
+button:hover {
+  background-color: #2c92eb; /* Темно-зеленый */
+  transform: scale(1.1); /* Увеличение кнопки */
+}
+.button:active {
+  background-color: #3e8e41; /* Еще более темный зеленый */
+  transform: scale(0.95); /* Легкое уменьшение кнопки */
+}
+.HiddenBox {
+  align-items: center;
+  color: white;
+  text-align: center;
+  width: 275px;
+  height: 200px;
+  background-color: red;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+}
+.b1 {
+  margin-top: 30px;
+}
+button.move-away {
+  transform: translateX(100px); /* Перемещаем кнопку вправо */
+  transition: transform 0.5s ease-out;
+}
